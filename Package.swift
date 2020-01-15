@@ -21,7 +21,9 @@ let package = Package(
         .target(
             name: "Kakapo",
             dependencies: [],
-            path: "Source"),
+            path: "Source",
+            exclude: ["NSMutableURLRequest+FixCopy.h", "NSMutableURLRequest+FixCopy.m"
+            ]),
         .testTarget(
             name: "KakapoTests",
             dependencies: ["Kakapo"],
